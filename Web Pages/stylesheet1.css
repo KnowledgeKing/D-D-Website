@@ -3,6 +3,8 @@
     height:1500px;
     width:100%;
 }
+/*This is the Head portion of the website containing the title and navigation menu formating/
+pictures. */
 .headspace{
     background-image:url('Celestia.jpg');
     width:100%;
@@ -10,22 +12,46 @@
     margin-left:0px;
     Margin-right:0px;
 }
-.navmenu{
+/*This is the portion of the website that sticks to the top when scrolling down as a menu
+Navigation menu needs to be nested in this portion*/
+.navbg{
     width:100%;
     height:100px;
-    /*background-color: rgba(77, 148, 255, 0.5);*/
     background-image:url('Celestia.jpg');
     background-position-y: -300px;
     position:-webkit-sticky;
     position:sticky;
     top:0px;
 }
-.navigation{
-    background-color: rgba(115, 84, 155, 0.308);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, 
-    rgba(0, 255, 255, 0.349) 35%, rgba(0, 213, 255, 0.596) 100%);
+.navbggradient{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, 
+    rgba(0, 255, 255, 0.377) 35%, rgba(0, 213, 255, 0.774) 100%);
     width:100%;
     height:100%;
+    margin-top:0px;
+    /*padding-top: 10px;*/
+}
+.navbox{
+    text-align: center;
+    margin-top:0px;
+    font-size: 30px;
+    list-style-type: none;
+    position:relative;
+    top: 50%;
+}
+.navitems{
+    border-radius: 5px;
+    padding:5px 15px 5px 15px;
+    margin-left: 15px;
+    width: 150px;
+    display:inline;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+.navitems, a{
+    text-decoration: none;
+}
+.navitems, a:hover {
+    color: pink;
 }
 .newtext{
     width:75%;

@@ -72,6 +72,7 @@ Navigation menu needs to be nested in this portion*/
 }
 .navitems, a:hover {
     background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 10px 10px 10px;
 }
 .navitems, a:active {
     color: rgb(255, 255, 255);
@@ -80,14 +81,14 @@ Navigation menu needs to be nested in this portion*/
 .Dropmenu{
     text-decoration: none;
     margin: 5px 10px 5px 10px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    border:solid black;
 }
 .drop-content{
     display:none;
     position:absolute;
-    background-color: rgba(128, 0, 121, 0.5);
+    
     color: black;
 }
 .dropbtn{
@@ -96,7 +97,9 @@ Navigation menu needs to be nested in this portion*/
 }
 .dropbtn:hover .drop-content{
     display:block;
+    position:absolute;
     color: purple;
+    z-index:1;
     
 }
 .newtext{

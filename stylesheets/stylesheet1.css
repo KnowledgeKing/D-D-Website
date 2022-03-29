@@ -55,10 +55,6 @@ Navigation menu needs to be nested in this portion*/
     text-decoration: none;
     color: white;
 }
-
-
-
-
 .navitems{
     border-radius: 5px;
     padding:5px 15px 5px 15px;
@@ -67,6 +63,7 @@ Navigation menu needs to be nested in this portion*/
     width: 150px;
     display: inline;
     background-color: rgba(0, 0, 0, 0.5);
+    
 }
 .navitems, a{
     text-decoration: none;
@@ -78,6 +75,29 @@ Navigation menu needs to be nested in this portion*/
 }
 .navitems, a:active {
     color: rgb(255, 255, 255);
+}
+/*Character dropdown menu*/
+.Dropmenu{
+    text-decoration: none;
+    margin: 5px 10px 5px 10px;
+    align-items: center;
+    justify-content: center;
+    border:solid black;
+}
+.drop-content{
+    display:none;
+    position:absolute;
+    background-color: rgba(128, 0, 121, 0.5);
+    color: black;
+}
+.dropbtn{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+.dropbtn:hover .drop-content{
+    display:block;
+    color: purple;
+    
 }
 .newtext{
     width:75%;

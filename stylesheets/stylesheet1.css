@@ -1,6 +1,10 @@
+#background{
+    width:100%;
+}
 .bgelement{
     background-color:lightgrey;
     height: 1500px;
+    width:100%;
 }
 /*This is the Head portion of the website containing the title and navigation menu formating/
 pictures. */
@@ -50,7 +54,6 @@ Navigation menu needs to be nested in this portion*/
 .navmenu{
     text-align: center;
     font-size: 30px;
-    float:left;
     padding: 10px 10px 10px 10px;
     text-decoration: none;
     color: white;
@@ -70,9 +73,10 @@ Navigation menu needs to be nested in this portion*/
     color: rgb(255, 255, 255);
     margin: 5px 10px 5px 10px;
 }
-.navitems, a:hover {
+.navitems, #navbtn:hover {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 10px 10px 10px;
+    font-size: 35px;
 }
 .navitems, a:active {
     color: rgb(255, 255, 255);
@@ -80,27 +84,44 @@ Navigation menu needs to be nested in this portion*/
 /*Character dropdown menu*/
 .Dropmenu{
     text-decoration: none;
-    margin: 5px 10px 5px 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 10px 10px 10px 10px;
 }
 .drop-content{
     display:none;
     position:absolute;
-    
+    font-size:20px;
     color: black;
 }
 .dropbtn{
     font-size: 30px;
     color: rgb(255, 255, 255);
 }
+/*Something isn't working right with this code...*/
+.dropbtn{
+    padding: 0px;
+    font-size: 30px;
+    margin-bottom: 0px;
+    width:fit-content;
+}
 .dropbtn:hover .drop-content{
-    display:block;
-    position:absolute;
-    color: purple;
-    z-index:1;
-    
+    display: block;
+    text-decoration: none;
+    z-index:5;
+    height:fit-content;
+    background-color: rgb(0,0,0,0.5);
+    border:dashed rgb(0,0,0,0.5);
+    margin-top: 10px;
+    padding:0px;
+}
+#drplink{
+    padding:0px;
+    text-align: left;
+    border:solid red;
+}
+.drop-content, #drplink:hover{
+    color:magenta;
+    font-size: 20px;
+    padding:none;
 }
 .newtext{
     width:75%;
@@ -112,4 +133,22 @@ Navigation menu needs to be nested in this portion*/
     padding: 10px 10px 10px 10px;
     font-size: 52px;
     text-align:center;
+}
+footer{
+    color:grey;
+    Background-color: rgb(0,0,0,0.1);
+    width:100%;
+    padding:5px 5px 5px 5px;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    bottom:0px;
+}
+#footcent{
+    text-align: center;
+    margin:0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

@@ -75,7 +75,7 @@ Navigation menu needs to be nested in this portion*/
     color: rgb(255, 255, 255);
     margin: 5px 10px 5px 10px;
     padding:5px 5px;
-    border: dashed rgba(0, 213, 255, 0.3)
+    
 }
 #navbtn:hover {
     background-color: rgba(0, 0, 0, 0.5);
@@ -120,9 +120,10 @@ Navigation menu needs to be nested in this portion*/
     color:inherit;
 }
 .dropbtn:hover{
-    background-color: rgb(0,0,0,0.3);
+    background-color: rgb(0,0,0,0.5);
     border-top-left-radius: 7px;
     border-top-right-radius: 7px;
+    border-bottom-right-radius:7px;
 }
 .dropbtn:hover .drop-content{
     display: block;
@@ -172,6 +173,9 @@ footer{
     max-height:60%;
     text-align: left;
     display:block;
+    border:solid black;
+    display:flex;
+    align-items: center;
 }
 .signin label{
     margin-right: 20px;
@@ -184,4 +188,7 @@ footer{
 }
 .signin button{
     margin-top: 10px;
+}
+#Email{
+margin-left:23px;
 }
